@@ -1,1 +1,0 @@
-"# dcc078_singleton" 
