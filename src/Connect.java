@@ -1,5 +1,5 @@
 public class Connect {
-
+    // Classe usada para conexão com banco de dados
     private Connect() {};
     private static Connect conn = new Connect();
     public static Connect getConn() {

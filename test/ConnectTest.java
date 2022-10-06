@@ -17,15 +17,16 @@ public class ConnectTest {
     }
 
     @Test
-    public void deveAlterarSenha() {
+    public void deveAlterarSenhaAlterada() {
         Connect.getConn().setPassword("senha-antinga123");
         Connect.getConn().setPassword("novasenha");
         assertEquals("novasenha", Connect.getConn().getPassword());
     }
 
     @Test
-    public void deveRetornarErroHost() {
+    public void deveRetornarHostAlterado() {
+        Connect.getConn().setHost("db");
         Connect.getConn().setHost("database");
-        assertEquals("database2", Connect.getConn().getHost());
+        assertEquals("database", Connect.getConn().getHost());
     }
 }
